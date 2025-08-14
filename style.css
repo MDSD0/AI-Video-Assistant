@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Full-screen setup */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #0f0f0f;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+}
+
+.gr-blocks {
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin: 2rem auto 1.5rem auto;
+}
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.header p {
+  color: #9CA3AF;
+  font-size: 1.1rem;
+}
+.header .icon {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+/* Main Layout */
+#top-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1;
+  min-height: 0; /* Prevents overflow */
+}
+
+/* Left Panel (Video) */
+#left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#video-box {
+  width: 100%;
+  min-height: 350px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  flex: 1; /* Takes available space */
+}
+#process-btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+#process-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Right Panel (Textboxes) */
+#right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#question-box, #response-box {
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #18181b;
+  margin-bottom: 1.2rem;
+  border: 1px solid #2a2a2d;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Audio Section */
+.audio-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #D1D5DB;
+  padding: 2rem 0 0.5rem 0;
+}
+#audio-player {
+  width: 100%;
+  border-radius: 12px;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Context Glossary */
+#history-display {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #18181b;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
